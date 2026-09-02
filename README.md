@@ -29,6 +29,9 @@ npm run dev
 | `/projects` | 项目广场；`/projects/industry-research` 为交付式项目工作台 |
 | `/assessment` | 情境测评、能力雷达与规则推荐路径 |
 | `/coaching` | 服务选择与陪练需求提交 |
+| `/coaches` | 按能力、行业和任务筛选 AI 陪练者 |
+| `/become-coach` | 陪练申请条件、审核流程与申请表 |
+| `/community` | 实践小组、问题墙、共做活动与成果复盘 |
 | `/dashboard` | 个人学习操作系统 |
 | `/search` | 跨内容类型搜索与空状态 |
 | `/admin` | 内容工作流与管理表格 |
@@ -39,6 +42,7 @@ npm run dev
 - Next.js App Router + TypeScript，公开内容默认服务端渲染，实验和工作台只在需要交互的局部使用 Client Components。
 - 样式采用本地 CSS token 与组件层，不依赖 Google Fonts，便于未来中国环境部署。
 - Supabase/PostgreSQL 承担 Auth、结构化内容、学习进度、项目成果、陪练、通知与分析事件。
+- 陪练供给侧包含申请、案例审核、模拟陪练、公开主页与接单状态；社群围绕实践小组、问题、复盘、成果和共做活动建模。
 - 内容主体使用 `lesson_sections.content` 与新闻 `body` 的结构化 JSON block，避免把内容写死在巨型 React 文件中。首版页面内数据是凭据缺失时的本地 fallback。
 - `content_status` 与 `publication_schedule` 实现草稿 → 审核 → 发布 → 归档以及定时发布。
 - 未来 Agent 只通过服务接口提交草稿或建议，不能绕过人工审核直接发布。

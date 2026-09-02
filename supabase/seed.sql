@@ -31,3 +31,9 @@ insert into public.industries (slug,name,description) values ('education','教�
 insert into public.coaching_services (name,duration_minutes,price_cents,description) values ('30 分钟 AI 方向诊断',30,19900,'理清问题并给出行动路线'),('60 分钟 AI 实战陪练',60,39900,'共同完成一个真实任务'),('4 周 AI 应用陪跑',240,199900,'每周实战、复盘与调整');
 
 insert into public.capability_dimensions (slug,name,description) values ('understanding','AI 理解','理解能力与边界'),('prompt','Prompt','定义任务'),('context','Context','提供工作背景'),('research','Research','寻找与比较来源'),('verification','查证','验证事实与结论'),('writing','写作','协作表达'),('image','图片','视觉生成与控制'),('video','视频','视频工作流'),('data','数据','分析与解释数据'),('coding','Coding','与编码 Agent 协作'),('workflow','Workflow','设计可复用流程'),('automation','自动化','连接系统与动作'),('agent','Agent','规划、工具与人工确认'),('judgment','AI 判断','识别风险与边界'),('business','业务应用','把能力接入真实业务');
+
+insert into public.community_groups (slug,name,description,group_type,status) values
+('content-workflow-circle','AI 内容工作流共做组','围绕选题、研究、脚本与分发持续共做和复盘','practice','published'),
+('coding-for-everyone','非程序员 AI Coding 小组','和 Coding Agent 一起做出真实可用的小产品','practice','published'),
+('ai-video-practice','AI 视频实践组','通过每周镜头任务训练脚本、生成与剪辑','practice','published'),
+('trusted-research','可信 Research 小组','练习来源选择、交叉验证与研究表达','practice','published');

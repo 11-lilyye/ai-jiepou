@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { Bell, Menu, Search, X } from "lucide-react";
 import { useState } from "react";
 
-const nav = [["首页", "/"], ["学 AI", "/learn"], ["AI 实验室", "/lab"], ["AI 世界", "/world"], ["行业 AI", "/industries"], ["做项目", "/projects"], ["AI 工具", "/tools"], ["一对一陪练", "/coaching"]];
+const nav = [["首页", "/"], ["学 AI", "/learn"], ["AI 实验室", "/lab"], ["AI 世界", "/world"], ["行业 AI", "/industries"], ["做项目", "/projects"], ["AI 工具", "/tools"], ["AI 陪练", "/coaching"], ["社群", "/community"]];
 
 export function SiteHeader() {
   const path = usePathname();
