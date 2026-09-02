@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { Bell, Menu, Search, X } from "lucide-react";
 import { useState } from "react";
 
-const nav = [["首页", "/"], ["学 AI", "/learn"], ["AI 实验室", "/lab"], ["AI 世界", "/world"], ["行业 AI", "/industries"], ["做项目", "/projects"], ["AI 工具", "/tools"], ["AI 陪练", "/coaching"], ["社群", "/community"]];
+const nav = [["首页", "/"], ["学 AI", "/learn"], ["AI 实验室", "/lab"], ["AI 世界", "/world"], ["行业 AI", "/industries"], ["做项目", "/projects"], ["AI 工具", "/tools"], ["交流与陪练", "/coaching"]];
 
 export function SiteHeader() {
   const path = usePathname();
@@ -14,7 +14,10 @@ export function SiteHeader() {
     <div className="header-inner">
       <Link href="/" className="brand" aria-label="AI 解剖首页"><span className="brand-mark">A</span><span>AI 解剖</span><small>把复杂讲明白</small></Link>
       <nav className={open ? "nav open" : "nav"} aria-label="主导航">
-        {nav.map(([label, href]) => <Link onClick={() => setOpen(false)} className={path === href ? "active" : ""} href={href} key={href}>{label}</Link>)}
+        {nav.map(([label, href]) => {
+          const supportPath = href === "/coaching" && ["/coaching", "/coaches", "/become-coach", "/community"].includes(path);
+          return <Link onClick={() => setOpen(false)} className={path === href || supportPath ? "active" : ""} href={href} key={href}>{label}</Link>;
+        })}
         <Link onClick={() => setOpen(false)} href="/dashboard">我的 AI</Link>
       </nav>
       <div className="header-actions">
