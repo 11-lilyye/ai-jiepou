@@ -1,0 +1,20 @@
+node_modules/
+.next/
+out/
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.log
+*.tsbuildinfo
+
+# Existing private knowledge-base material in this workspace
+.obsidian/
+0-AI信号雷达/
+1 - AI底层地图/
+2 - 应用能力地图/
+3 - 解决方案实验室/
+4 - 需求地图/
+5 - 商业层/
+2026-08-31.md
+思维风暴.md

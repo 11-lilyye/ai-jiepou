@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { ArrowRight, Briefcase, ChartSpline, CircleAlert, Factory, GraduationCap, ShoppingCart } from "lucide-react";
+import { industries } from "@/lib/data";
+import { PageHero, Pill, SectionHead } from "@/components/ui";
+const icons=[GraduationCap,ShoppingCart,ChartSpline,Briefcase,Factory];
+export default function IndustriesPage(){return <><PageHero eyebrow="行业 AI" title="AI 正在怎样改变你的行业？" intro="不是泛泛谈趋势。每个行业中心持续跟踪工作流程、岗位变化、工具、案例、风险和可以亲手完成的项目。"/><section className="section white"><div className="container"><SectionHead title="选择你所在的行业"/><div className="industry-grid">{industries.map((x,i)=>{const Icon=icons[i%5];return <Link href="/industries/ecommerce" className="industry-card" key={x}><Icon/><span><b>{x}</b><small>{8+i%5} 篇新解读 · {3+i%4} 个项目</small></span><ArrowRight/></Link>})}</div></div></section><section className="section"><div className="container"><SectionHead eyebrow="本周观察" title="跨行业变化"/><div className="industry-feature-grid"><div className="industry-feature"><Pill tone="orange">电商</Pill><h2>从“生成一张商品图”到重组整条内容供应链</h2><p>真正节省时间的不是单次生成，而是把选品信息、卖点、视觉和多平台规格接成流程。</p><Link href="/industries/ecommerce">进入电商 AI 中心 <ArrowRight/></Link></div><div className="risk-card"><CircleAlert/><div><b>风险提醒</b><h3>招聘筛选中的 AI 偏见，不是换个模型就能消失</h3><p>数据、指标与人工复核方式都会影响结果。</p></div></div></div></div></section></>}
