@@ -10,7 +10,7 @@ export const goals = [
   { slug: "coding", title: "编程建造", detail: "和 Coding Agent 一起做产品", icon: Code2, color: "green", promise: "从需求到上线，与 Coding Agent 一起做出真正可访问的产品。", steps: ["定义最小可用版本", "让 Agent 先读懂项目", "小步实现并持续验证", "部署上线并记录迭代"], resource: ["进入 Coding 项目", "/projects"] },
   { slug: "ecommerce", title: "电商增长", detail: "选品、素材、客服与运营", icon: ShoppingBag, color: "amber", promise: "把 AI 放进商品、内容、客服和经营复盘，而不只生成一张图。", steps: ["找到经营流程的瓶颈", "选择合适的数据与工具", "接入人工确认节点", "用业务指标验证效果"], resource: ["进入电商 AI 中心", "/industries/ecommerce"] },
   { slug: "automation", title: "流程自动化", detail: "把重复工作变成系统", icon: Network, color: "indigo", promise: "把重复动作画成流程，再逐步交给自动化和 Agent。", steps: ["记录真实输入与输出", "拆出处理、判断和例外", "先自动化稳定的部分", "监控失败并保留人工接管"], resource: ["在实验室搭建流程", "/lab"] },
-  { slug: "startup", title: "创业验证", detail: "研究市场，做出第一个版本", icon: Rocket, color: "red", promise: "用最小成本验证问题、用户和方案，先获得证据再扩大投入。", steps: ["明确目标用户与问题", "访谈并收集真实证据", "做出最小可用版本", "根据使用结果决定下一步"], resource: ["开始创业验证项目", "/projects"] },
+  { slug: "startup", title: "创业验证", detail: "研究市场，做出第一个版本", icon: Rocket, color: "red", promise: "用最小成本验证问题、用户和方案，先获得证据再扩大投入。", steps: ["明确目标用户与问题", "访谈并收集真实证据", "做出最小可用版本", "根据使用结果决定下一步"], resource: ["开始创业验证项目", "/projects/startup-validation"] },
 ];
 
 export const news = [

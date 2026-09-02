@@ -6,6 +6,7 @@ import "./workspace.css";
 import "./mobile.css";
 import "./community.css";
 import "./pathways.css";
+import "./startup-project.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
